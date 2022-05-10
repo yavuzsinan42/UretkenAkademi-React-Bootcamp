@@ -1,0 +1,59 @@
+
+.img-thumbnail {
+  transition: transform 0.3s; /* Animation */
+  margin: 0 auto;
+  webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+  filter: blur(1px);
+  border-width: 3px;
+}
+.img-thumbnail:hover {
+  transform: scale(1.05);
+  webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+  filter: blur(0px);
+}
+h1 {
+  text-align: center;
+}
+.gizle {
+  display: none;
+}
+.zoom {
+  transition: transform 0.3s; /* Animation */
+  transform: scale(2);
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes tada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  animation-name: tada;
+}

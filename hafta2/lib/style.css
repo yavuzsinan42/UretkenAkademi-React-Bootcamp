@@ -1,0 +1,61 @@
+@import "stil2.css";
+body{
+    background-color: pink;
+}
+p{
+    background-color: gray;
+    color: antiquewhite;
+}
+input[type=text],input[type=password]{
+    background-color: white;
+    width: 100%;
+    padding:5px;
+    border: 2px solid black;
+    color:blue;
+}
+input[type=submit]{
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border: 2px solid black;
+}
+input[type=text]:focus,input[type=password]:focus{
+    background-color: gray;
+}
+.baslik{
+    background-color: white;
+}
+#deneme{
+    background-color: gray;
+}
+.box{ 
+    background-color:white;
+    width: 200px;
+    height: 200px;
+    border: 20px solid black;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+div#kutuKapsa{
+    width: 900px;
+    height: 480px;
+    border: 20px solid black;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+div.kutu{
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 10px;
+    
+}
